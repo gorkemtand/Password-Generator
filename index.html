@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pass Generator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+       <div class="container">
+            <h1>Password Generator</h1>
+                <div class="generated-Password">
+                    <input type="text" class="password" disabled value="mzdPL9xZwSVX06s">
+                    <span id="copy-all" class="material-symbols-outlined">
+                        copy_all
+                        </span>
+                    <div class="pass-indicator" id="medium"></div>
+                </div>
+                <div class="length">
+                    <h2>Password Length</h2>
+                    <input type="range" class="pass-length" min="1" max="30" value="15" step="1">
+                    <span class="lengthValue">15</span>
+                </div>
+                <div class="passSettings">
+                    <h2>Password Settings</h2>
+                    <div class="options">
+                        <div class="option">
+                        <input type="checkbox" id="lowerCase" checked>
+                        <label for="lowerCase">Lower Case (a-z)</label>
+                        </div>
+                        <div class="option">
+                        <input type="checkbox" id="upperCase" checked>
+                        <label for="upperCase">Upper Case (A-Z)</label>
+                        </div>
+                        <div class="option">
+                        <input type="checkbox" id="numbers" checked>
+                        <label for="numbers">Numbers (0-9)</label>
+                        </div>
+                        <div class="option">
+                        <input type="checkbox" id="symbols">
+                        <label for="symbols">Symbols (!-$^+)</label>
+                        </div>
+                        <div class="option">
+                        <input type="checkbox" id="noDuplicate">
+                        <label for="noDuplicate">Exclude Duplicate</label>
+                        </div>
+                        <div class="option">
+                        <input type="checkbox" id="space">
+                        <label for="space">Include Spacing</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="generate-btn">
+                <button type="button" class="btn btn-success" id="generate-btn">GENERATE PASSWORD</button>
+                </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="index.js"></script>
+</body>
+
+</html>
+
+
+             
+
+                
+
+                

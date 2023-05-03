@@ -1,0 +1,115 @@
+body{
+    background-color: #46b053;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    border-bottom: 1px solid;
+    padding: 1rem 1rem 1rem 1rem;
+    font-weight: 900;
+    font-size: 2.2rem;
+}
+
+h2{
+    padding: 1rem 1rem 1rem 1rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.container{
+    background-color: white;
+    width: 450px;
+    border-radius: 8px;
+    box-shadow: 6px 12px 10px 3px;
+}
+
+.generated-Password{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.generated-Password input{
+    width: 100%;
+    font-size: 28px;
+    border-radius: 4px;
+    color: #303030;
+}
+
+.generated-Password span{
+    position: relative;
+    font-size: 30px;
+    right: -10px;
+    cursor: pointer;
+}
+
+.generated-Password span:hover{
+    color: green;
+}
+
+.length input{
+    margin: 0.5rem 1rem 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.options{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 0.5rem 1rem 1rem 1rem;
+}
+
+.option {
+    width: 170px;
+}
+
+.generate-btn{
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0 1rem 0;
+}
+
+.btn-success{
+    box-shadow: 3px 4px 5px 3px rgba(0, 0, 0, 0.2);
+}
+
+.pass-indicator{
+    width: 350px;
+    height: 4px;
+    position: absolute;
+    background: #dfdfdf;
+    margin-top: 5rem;
+    margin-right: 2rem;
+    border-radius: 25px;
+  }
+
+.pass-indicator::before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 50%;
+    border-radius: inherit;
+    transition: width 0.3s ease;
+  }
+.pass-indicator#weak::before{
+    width: 20%;
+    background: #E64A4A;
+  }
+  .pass-indicator#medium::before{
+    width: 50%;
+    background: #f1c80b;
+  }
+  .pass-indicator#strong::before{
+    width: 100%;
+    background: green;
+  }
+
+
+  footer{
+    display: block;
+  }
